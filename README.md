@@ -1,1 +1,3 @@
-$g=(gp 'HKLM:\SOFTWARE\Microsoft\Cryptography').MachineGuid; $c=(Get-CimInstance Win32_Processor).ProcessorId; $m=(Get-CimInstance Win32_BaseBoard).SerialNumber; $id="$g|$c|$m"; $id | Set-Clipboard; $id
+cmd commands:
+1- reg query "HKLM\SOFTWARE\Microsoft\Cryptography" /v MachineGuid
+2- vol c:
